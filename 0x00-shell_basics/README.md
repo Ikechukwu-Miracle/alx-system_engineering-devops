@@ -1,2 +1,1 @@
-This project helps with the understanding of **Shell Basics**
-
+0-current_working_directory prints the absolute working directory
