@@ -9,3 +9,4 @@
 8-firstdelete deletes the file 'betty'
 9-firstdirdelete deletes the 'my_first_directory' directory
 10-back takes us back to the previous directory
+11-lists displays the contents of the current dir, the parent dir, and /boot dir in long format at once
