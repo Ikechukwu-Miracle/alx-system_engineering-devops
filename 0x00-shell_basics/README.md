@@ -4,3 +4,4 @@
 3-listfiles displays contents of current working directory in a long format
 4-listmorefiles displays hidden files in a long format
 5-listfilesdigitonly displays contents of working directory in a long format user/group in digits
+6-firstdirectory creates a new directory called my_first_directory
