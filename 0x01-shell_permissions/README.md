@@ -4,4 +4,4 @@
 3-new_owner changes the owner of the file 'hello' to betty
 4-empty creates the empty file 'hello'
 5-execute makes 'hello' executable by the owner
-6-multiple_permissions gives rwx to user, rw- to group and r-- to others for the hello file 
+6-multiple_permissions gives rwx to user, r-x to group and r-- to others for the hello file 
