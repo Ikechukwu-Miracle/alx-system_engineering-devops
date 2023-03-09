@@ -6,3 +6,4 @@
 5-listfilesdigitonly displays contents of working directory in a long format user/group in digits
 6-firstdirectory creates a new directory called my_first_directory
 7-movethatfile moves the file 'betty' to my_first_directory
+8-firstdelete deletes the file 'betty'
