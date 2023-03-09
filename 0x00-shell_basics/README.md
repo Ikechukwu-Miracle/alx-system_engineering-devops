@@ -8,3 +8,4 @@
 7-movethatfile moves the file 'betty' to my_first_directory
 8-firstdelete deletes the file 'betty'
 9-firstdirdelete deletes the 'my_first_directory' directory
+10-back takes us back to the previous directory
