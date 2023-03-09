@@ -7,3 +7,4 @@
 6-multiple_permissions gives rwx to user, r-x to group and r-- to others for the hello file 
 7-everybody gives everyone execute permission on the file 'hello'
 8-James_Bond gives all the rights (rwx) to other users only
+9-John_Doe gives the permissions -rwxr-x-wx to the file 'hello'
