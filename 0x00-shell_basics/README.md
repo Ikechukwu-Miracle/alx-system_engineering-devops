@@ -13,3 +13,4 @@
 12-file_type prints the type of the file 'iamafile'
 13-symbolic_link creates a symbolic link named '__ls__' in the current working directory
 14-copy_html copies all the html files to the parent dir
+100-lets_move moves all the file beginning with upper case to /tmp/u
