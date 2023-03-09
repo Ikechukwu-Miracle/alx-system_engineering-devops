@@ -11,3 +11,4 @@
 10-back takes us back to the previous directory
 11-lists displays the contents of the current dir, the parent dir, and /boot dir in long format at once
 12-file_type prints the type of the file 'iamafile'
+13-symbolic_link creates a symbolic link named '__ls__' in the current working directory
