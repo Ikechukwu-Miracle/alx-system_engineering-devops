@@ -18,4 +18,5 @@
 17-hidethisword displays lines without the 'bin' pattern
 18-lettersonly displays all line of the file /etc/ssh/sshd_config starting with a letter
 19-AZ replaces A and c with Z and e from input
+20-hiago deletes the characters c and C
 
