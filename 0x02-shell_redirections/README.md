@@ -8,4 +8,4 @@
 7-file creates a file with a really long name having special characters in its name
 8-cwd_state redirects the output of the ls -la command to a file named ls_cwd_content
 9-duplicate_last_line duplicates the last line of the file iacta
-
+10-no_more_js finds all the .js files in the working dir and sub dir 
