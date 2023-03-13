@@ -6,4 +6,5 @@
 5-firstlines displays the first ten lines in the file /etc/passwd
 6-third_line displays the third line in the file iacta
 7-file creates a file with a really long name having special characters in its name
+8-cwd_state redirects the output of the ls -la command to a file named ls_cwd_content
 
