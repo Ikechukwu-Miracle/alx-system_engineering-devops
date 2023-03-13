@@ -17,4 +17,5 @@
 16-whatsnext displays 3 lines after the pattern 'root'
 17-hidethisword displays lines without the 'bin' pattern
 18-lettersonly displays all line of the file /etc/ssh/sshd_config starting with a letter
+19-AZ replaces A and c with Z and e from input
 
