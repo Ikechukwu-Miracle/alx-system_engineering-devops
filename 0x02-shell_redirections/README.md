@@ -12,4 +12,5 @@
 11-directories list all the dir in the working dir and counts them
 12-newest_files lists the 10 newest files in the wprking dir 13-unique
 13-unique sorts and prints words that appear only once from a list of words 
+14-findthatword displays the pattern root from the /etc/passwd
 
