@@ -23,4 +23,5 @@
 22-users_and_homes sorts the users and displays 
 100-empty_casks finds all empty files and dir in the working dir 
 101-gifs lists all files with the .gif extension in current dir and it's subdir
+102-acrostic decodes acrostics
 
