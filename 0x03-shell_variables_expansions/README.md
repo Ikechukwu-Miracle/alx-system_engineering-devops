@@ -7,4 +7,6 @@
 6-create_local_variable creates a local variable BEST with value "School"
 7-create_global_variable creates a global variable BEST with value "School"
 8-true_knowledge displays the result of the addition of 128 to the value of the variable TRUEKNOWLEDGE
-9-divide_and_rule displays the result of POWER  / DIVIDE 
+9-divide_and_rule displays the result of POWER  / DIVIDE
+10-love_exponent_breath shows the result of BREATH exponent LOVE
+ 
