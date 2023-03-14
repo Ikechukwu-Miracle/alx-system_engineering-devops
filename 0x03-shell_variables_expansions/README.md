@@ -10,4 +10,5 @@
 9-divide_and_rule displays the result of POWER  / DIVIDE
 10-love_exponent_breath shows the result of BREATH exponent LOVE
 11-binary_to_decimal converts the binary number BINARY to base 10
+12-combinations prints 64 possible combination of two letters in a new line without oo
  
