@@ -12,4 +12,5 @@
 11-binary_to_decimal converts the binary number BINARY to base 10
 12-combinations prints 64 possible combination of two letters in a new line without oo
 13-print_float prints a number in 2 decimal places and stores it in NUM
+100-decimal_to_hexadecimal converts the value DECIMAL to base 16
  
