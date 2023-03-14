@@ -15,4 +15,5 @@
 100-decimal_to_hexadecimal converts the value DECIMAL to base 16
 101-rot13 encodes and decodes texts using rot13 encryption
 102-odd prints every other line from input starting with the first line
+103-water_and_stir adds two numbers of different different bases stored in two global variable
  
