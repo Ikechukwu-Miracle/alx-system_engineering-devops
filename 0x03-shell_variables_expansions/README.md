@@ -13,4 +13,6 @@
 12-combinations prints 64 possible combination of two letters in a new line without oo
 13-print_float prints a number in 2 decimal places and stores it in NUM
 100-decimal_to_hexadecimal converts the value DECIMAL to base 16
+101-rot13 encodes and decodes texts using rot13 encryption
+102-odd prints every other line from input starting with the first line
  
