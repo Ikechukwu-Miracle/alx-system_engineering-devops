@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Displays the list of files in the current directory.
+
+list=$(ls)
+for l in $list;
+do
+	echo "$l" | cut -d '-' -f2
+done
