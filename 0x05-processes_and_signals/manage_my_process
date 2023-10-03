@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays "I am alive!" indefinitely with an interval of 2 secs.
+
+while true
+do
+	touch /tmp/my_process
+	echo "I am alive!" >> /tmp/my_process
+	sleep 2
+done
