@@ -3,17 +3,5 @@
 
 apt-get update
 apt-get -y nginx
-# echo "Hello World!" > /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
 service nginx start
-
-sh -c 'echo "server {
-        listen 80;
-        seever_name localhost;
-        location / {
-                echo \"Hello World!\";
-                root /var/www/html;
-                index index.html index.htm;
-        }
-}" > /etc/nginx/sites-available/default'
-
-service nginx reload
