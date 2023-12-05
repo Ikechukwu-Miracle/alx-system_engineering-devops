@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2154
+# Automates the configuration of an ubuntu machine
+
+apt-get -y update
+apt install nginx -y 
+
+HOST=$(hostname)
+HEADER="\\\n\tadd_header X-Served-By $HOST;\n"
+SERVED_BY=$(grep "X-Server-by" /etc/nginx/sites-available/default)
+if [[ -z SERVED_BY ]]; then
+	sed -i "23i $HEADER" /etc/nginx/sites-available/default
+fi
+
+service nginx restart
