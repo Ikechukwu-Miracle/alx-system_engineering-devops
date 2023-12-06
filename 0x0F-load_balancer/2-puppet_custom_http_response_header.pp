@@ -1,49 +1,29 @@
-# Install Nginx
+# Custom HTTP header in a nginx server
+
+# update ubuntu server
+exec { 'update server':
+  command  => 'apt-get update',
+  user     => 'root',
+  provider => 'shell',
+}
+->
+# install nginx web server on server
 package { 'nginx':
-  ensure => 'latest',
+  ensure   => present,
+  provider => 'apt'
 }
-
-# Create directory and index.html file
-file { '/etc/nginx/html':
-  ensure => 'directory',
+->
+# custom Nginx response header (X-Served-By: hostname)
+file_line { 'add HTTP header':
+  ensure => 'present',
+  path   => '/etc/nginx/sites-available/default',
+  after  => 'listen 80 default_server;',
+  line   => 'add_header X-Served-By $hostname;'
 }
-
-file { '/etc/nginx/html/index.html':
-  content => 'Hello World!',
-}
-
-# Create 404.html file
-file { '/etc/nginx/html/404.html':
-  content => "Ceci n'est pas une page",
-}
-
-# Configure Nginx default site
-file { '/etc/nginx/sites-available/default':
-  content => "
-    server {
-      listen 80;
-      listen [::]:80 default_server;
-      add_header X-Served-By $hostname;
-      root /etc/nginx/html;
-      index index.html index.htm;
-
-      location /redirect_me {
-        return 301 https://www.linkedin.com/in/iykenweke;
-      }
-
-      error_page 404 /404;
-      location /404 {
-        root /etc/nginx/html;
-        internal;
-      }
-    }
-  ",
-  require => Package['nginx'],
-}
-
-# Restart Nginx service
+->
+# start service
 service { 'nginx':
-  ensure    => 'running',
-  enable    => true,
-  subscribe => File['/etc/nginx/sites-available/default'],
+  ensure  => 'running',
+  enable  => true,
+  require => Package['nginx']
 }
