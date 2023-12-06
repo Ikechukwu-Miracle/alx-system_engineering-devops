@@ -3,13 +3,28 @@
 # Automates the configuration of an ubuntu machine
 
 apt-get -y update
-apt install nginx -y 
+apt-get -y install nginx 
 
-HOST=$(hostname)
-HEADER="\\\n\tadd_header X-Served-By $HOST;\n"
-SERVED_BY=$(grep "X-Server-by" /etc/nginx/sites-available/default)
-if [[ -z SERVED_BY ]]; then
-	sed -i "23i $HEADER" /etc/nginx/sites-available/default
-fi
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
+sh -c "echo \"Ceci n'est pas une page\" > /etc/nginx/html/404.html"
+tee /etc/nginx/sites-available/default > /dev/null <<EOF
+server {
+	listen 80;
+	listen [::]:80 default_server;
+	add_header X-Served-By $HOSTNAME;
+	root /etc/nginx/html;
+	index index.html index.htm;
+	location /redirect_me {
+		return 301 https://www.linkedin.com/in/iykenweke;
+	}
+	error_page 404 404.html;
+	location /404 {
+		root /etc/nginx/html;
+		internal;
+	}
+}
+EOF
 
 service nginx restart
