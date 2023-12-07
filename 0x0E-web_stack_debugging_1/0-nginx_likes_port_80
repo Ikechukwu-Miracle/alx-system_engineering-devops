@@ -4,5 +4,5 @@
 DESIRED_PORT=80
 CONF="/etc/nginx/sites-enabled/default"
 
-sed -i "s/listen [0-9]\+/listen $desired_port/" "$nginx_conf"
+sed -i "s/listen [0-9]\+/listen $DESIRED_PORT/" "$CONF"
 service nginx restart
